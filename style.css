@@ -1,0 +1,160 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+:root{
+    --cyan: #44D3D2;
+    --red: #EA5454;
+    --yellow: #FCAE4A;
+    --blue: #549EF2;
+    --gray: #4D4F62;
+    --background: #FAFAFA;
+    --white: #FFFFFF;
+
+
+}
+
+body{
+    background-color: var(--background) ;
+}
+
+h1,h2, header p,h3{
+    color:var(--gray);
+}
+
+h1{
+    font-weight: 275;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.011rem;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.35rem;
+    letter-spacing: 0.011rem;
+}
+
+h3{
+    font-size: 1.20rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    padding: 2rem 0 0 1.25rem;
+}
+
+.container p{
+    padding-left:1.25rem;
+    font-size:0.913rem;
+    color: var(--gray);
+    opacity:50%;
+    
+}
+
+header p{
+    font-weight: 200;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    letter-spacing: 0.006rem;
+    margin-top: 0.625em;
+    height:4.688rem;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3.75rem auto 0 auto ;
+    height:10.063rem;
+    width:19.438rem;
+
+}
+
+.container div{
+    width:19.438rem;
+    height:13.875rem;
+    background-color: var(--white);
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius:5%;
+    border-top: 0.355rem;
+    
+}
+.container{
+    display: grid;
+    row-gap: 2.5rem;
+    justify-content: center;
+    margin: 2.7rem auto 2.7rem auto;
+}
+
+#one{
+    border-top: 0.355rem solid #44D3D2;
+}
+#two{
+    border-top: 0.355rem solid #EA5454;
+}
+#three{
+    border-top: 0.355rem solid #FCAE4A;
+}
+#four{
+    border-top: 0.355rem solid #549EF2;
+}
+
+.container img{
+    float:right;
+    margin:20px 30px 0 0;
+}
+
+@media screen and (min-width:1110px){
+    h1{
+        font-size:2.25rem;
+        font-weight:275;
+    }
+    h2{
+        font-size: 2.25rem;
+        padding-top:1rem;
+    }
+
+    header p{
+        opacity:50%
+    }
+
+    header{
+        height:15.063rem;
+        width:30.438rem;
+        margin-top:30px;
+    }
+
+    .container{
+        display:grid;
+        /*grid-template-columns:250px 230px 100px 200px;*/
+        grid-template-rows:200px 200px 0px;
+        column-gap: 20px;
+        row-gap: 60px;
+        margin: 0 auto;
+    }
+
+    #two{
+        grid-column:2/3;
+        grid-row:1/2;
+    }
+
+    #one{
+        grid-column:1/2;
+        grid-row:2/3;
+        transform:translateY(-80px);
+        
+    }
+
+    #three{
+        grid-row:2/3;
+        grid-column:2/3;
+    }
+
+    #four{
+        grid-column:4/5;
+        grid-row:2/3;
+        transform:translateY(-80px);
+    }
+}
