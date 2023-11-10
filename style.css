@@ -157,4 +157,7 @@ header{
         grid-row:2/3;
         transform:translateY(-120px);
     }
-}
+     .container div{
+        width:21.875rem;
+        height:15.625rem;
+    }}
